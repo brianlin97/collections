@@ -1,0 +1,617 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+  <title>Music</title>
+  <link rel="stylesheet" href="https://use.typekit.net/wtq0cbw.css">
+  <link type="text/css" rel="stylesheet" href="location.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <style>
+  @import url("https://use.typekit.net/wtq0cbw.css");
+  </style>
+</head>
+
+<body id="music">
+
+  <div id="cover-video">
+<video  height=100% width=100% opacity=0.001 autoplay muted loop preload="none">
+  <source src="main-bg-video.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <div id="title">
+      <a href="http://localhost:8888/collections">
+    <h2>SOUNDSCAPES</h2>
+    </a>
+  </div>
+
+
+
+
+  <div class="circle">
+  </div>
+
+  <div class="time-headers">
+    <h6 id="noon">NOON</h6>
+    <h6 id="six-am">6AM</h6>
+    <h6 id="six-pm">6PM</h6>
+    <h6 id="midnight">MIDNIGHT</h6>
+  </div>
+  <!-- <img id="clock-ref" src="24_hour_clock.gif"> -->
+
+  <div class="time-circle">
+
+
+    <div class="hour0"  onmouseover="loadFile('scripts/12-00')" onclick="togglePlay('audio-music-12:00')"  onmouseout="unloadFile0()">
+      <audio class="audio-music active"  id="audio-music-12:00">
+        <source src="http://localhost:8888/collections/audio-logs/music/music-12pm.m4a">
+      </audio></div>
+
+    <!-- <div class="hour1" onmouseover="loadFile('scripts/13-00')"  onclick="togglePlay('audio-music-13:00')"  onmouseout="unloadFile1()">
+      </audio></div> -->
+
+    <div class="hour2" onmouseover="loadFile('scripts/14-00')"  onclick="togglePlay('audio-music-14:00')"  onmouseout="unloadFile2()">
+      <audio class="audio-music active" id="audio-music-14:00">
+        <source src="http://localhost:8888/collections/audio-logs/music/music-2pm.m4a">
+      </audio>
+</div>
+
+    <!-- <div class="hour3" onmouseover="loadFile('scripts/15-00')"  onclick="togglePlay('audio-music-15:00')"  onmouseout="unloadFile3()">
+        <audio class="audio-music active" id="audio-music-15:00">
+      </audio>
+      </div> -->
+
+      <div class="hour4" onmouseover="loadFile('scripts/16-00')"  onclick="togglePlay('audio-music-16:00')"  onmouseout="unloadFile4()">
+        <audio class="audio-music active" id="audio-music-16:00">
+          <source src="http://localhost:8888/collections/audio-logs/piazza-della-signoria/piazza-della-signoria-4pm.m4a">
+      </audio>
+      </div>
+
+    <div class="hour5" onmouseover="loadFile('scripts/17-00')"  onclick="togglePlay('audio-music-17:00')"  onmouseout="unloadFile5()">
+      <audio class="audio-music active" id="audio-music-17:00">
+        <source src="http://localhost:8888/collections/audio-logs/piazza-della-repubblica/piazza-della-repubblica-5pm.m4a">
+    </audio>
+    </div>
+
+    <!-- <div class="hour6" onmouseover="loadFile('scripts/18-00')"  onclick="togglePlay('audio-music-18:00')"  onmouseout="unloadFile6()">
+      <audio class="audio-music active" id="audio-music-18:00">
+    </audio>
+    </div> -->
+
+    <!-- <div class="hour7" onmouseover="loadFile('scripts/19-00')"  onclick="togglePlay('audio-music-19:00')"  onmouseout="unloadFile7()">
+      <audio class="audio-music active" id="audio-music-19:00">
+      </audio>
+    </div> -->
+
+    <div class="hour8" onmouseover="loadFile('scripts/20-00')"  onclick="togglePlay('audio-music-20:00')"  onmouseout="unloadFile8()">
+      <audio class="audio-music active" id="audio-music-20:00">
+        <source src="http://localhost:8888/collections/audio-logs/chiesa-di-santa-fosca/chiesa-di-santa-fosca-8pm.m4a">
+
+      </audio>
+    </div>
+
+    <!-- <div class="hour8"></div> -->
+
+    <div class="hour9" onmouseover="loadFile('scripts/21-00')" onclick="togglePlay('audio-music-21:00')" onmouseout="unloadFile9()">
+      <audio class="audio-music active" id="audio-music-21:00">
+        <source src="http://localhost:8888/collections/audio-logs/piazzale-michelangelo/piazzale-michelangelo-9pm.m4a">
+      </audio>
+    </div>
+
+    <div class="hour10" onmouseover="loadFile('scripts/22-00')" onclick="togglePlay('audio-music-22:00')" onmouseout="unloadFile10()">
+      <audio class="audio-music active" id="audio-music-22:00">
+        <source src="http://localhost:8888/collections/audio-logs/piazza-della-repubblica/piazza-della-repubblica-10pm.m4a">
+      </audio>
+    </div>
+
+    <div class="hour10-1" onmouseover="loadFile('scripts/22-00-1')" onclick="togglePlay('audio-music-22:00-1')" onmouseout="unloadFile101()">
+      <audio class="audio-music active" id="audio-music-22:00-1">
+        <source src="http://localhost:8888/collections/audio-logs/piazza-della-signoria/piazza-della-signoria-10pm.m4a">
+      </audio>
+    </div>
+
+    <div class="hour10-2" onmouseover="loadFile('scripts/22-00-2')" onclick="togglePlay('audio-music-22:00-2')" onmouseout="unloadFile102()">
+      <audio class="audio-music active" id="audio-music-22:00-2">
+        <source src="http://localhost:8888/collections/audio-logs/piazzale-michelangelo/piazzale-michelangelo-10pm.m4a">
+      </audio>
+    </div>
+
+    <div class="hour11" onmouseover="loadFile('scripts/23-00')"  onclick="togglePlay('audio-music-23:00')"  onmouseout="unloadFile11()">
+      <audio class="audio-music active" id="audio-music-23:00">
+        <source src="http://localhost:8888/collections/audio-logs/piazza-della-repubblica/piazza-della-repubblica-11pm.m4a">
+      </audio>
+    </div>
+
+    <div class="hour12" onmouseover="loadFile('scripts/24-00')"  onclick="togglePlay('audio-music-24:00')"  onmouseout="unloadFile12()">
+      <audio class="audio-music active" id="audio-music-24:00">
+      <source src="http://localhost:8888/collections/audio-logs/music/music-12am.m4a">
+      </audio>
+    </div>
+
+    <div class="hour13" onmouseover="loadFile('scripts/01-00')"  onclick="togglePlay('audio-music-01:00')"  onmouseout="unloadFile13()">
+      <audio class="audio-music active" id="audio-music-01:00">
+      <source src="http://localhost:8888/collections/audio-logs/music/music-1am.m4a">
+      </audio>
+    </div>
+
+    <!-- <div class="hour14"></div> -->
+
+    <!-- <div class="hour15" onmouseover="loadFile('scripts/03-00')"  onclick="togglePlay('audio-music-03:00')"  onmouseout="unloadFile15()">
+      <audio class="audio-music active" id="audio-music-03:00">
+      </audio>
+    </div> -->
+    <!-- <div class="hour16"></div>
+    <div class="hour17"></div>
+    <div class="hour18"></div>
+    <div class="hour19"></div>
+    <div class="hour20"></div>
+    <div class="hour21"></div> -->
+    <!-- <div class="hour22"></div> -->
+
+    <div class="hour23" onmouseover="loadFile('scripts/11-00')"  onclick="togglePlay('audio-music-11:00')"  onmouseout="unloadFile23()">
+      <audio class="audio-music active" id="audio-music-11:00">
+      <source src="http://localhost:8888/collections/audio-logs/music/music-11pm.m4a">
+      </audio>
+    </div>
+
+  </div>
+
+  <div class=location-name>
+    <h2 id="name-title">MUSIC</h2>
+  </div>
+
+  <div class="time-title">
+    <h3 id="12">12:00</h3>
+    <h3 id="13">13:00</h3>
+    <h3 id="14">14:00</h3>
+    <h3 id="15">15:00</h3>
+    <h3 id="16">16:00</h3>
+    <h3 id="17">17:00</h3>
+    <h3 id="18">18:00</h3>
+    <h3 id="19">19:00</h3>
+    <h3 id="20">20:00</h3>
+    <h3 id="21">21:00</h3>
+    <h3 id="22">22:00</h3>
+    <h3 id="23">23:00</h3>
+    <h3 id="24">24:00</h3>
+    <h3 id="1">01:00</h3>
+    <h3 id="2">02:00</h3>
+    <h3 id="3">03:00</h3>
+    <h3 id="4">04:00</h3>
+    <h3 id="5">05:00</h3>
+    <h3 id="6">06:00</h3>
+    <h3 id="7">07:00</h3>
+    <h3 id="8">08:00</h3>
+    <h3 id="9">09:00</h3>
+    <h3 id="10">10:00</h3>
+    <h3 id="11">11:00</h3>
+  </div>
+
+  <div class="tags">
+
+  <div class="tag-location"><h3 id="piazza-della-repubblica">PIAZZA DELLA REPUBBLICA</h3> </div>
+
+  <div class="tag-location"><h3 id="piazza-della-signoria">PIAZZA DELLA SIGNORIA</h3> </div>
+
+  <div class="tag-location"><h3 id="piazzale-michelangelo">PIAZZALE MICHELANGELO</h3></div>
+
+  <div class="tag-location"><h3 id="chiesa-di-santa-fosca">CHIESA DI SANTA FOSCA</h3> </div>
+
+  <div class="tag-location"><h3></h3> </div>
+</div>
+
+
+
+  <script src="scripts/location.js">
+  </script>
+  <!-- <audio id="audio-music-12:00">
+    <source src="http://localhost:8888/collections/audio-logs/music/music%20Front%2012PM%201.m4a">
+  </audio>
+  <audio id="audio-music-13:00">
+    <source src="http://localhost:8888/collections/audio-logs/music/music%20Front%201PM%201.m4a">
+  </audio> -->
+
+
+  <canvas  id="canvas"></canvas>
+  <!-- <script src="scripts/audio.js"> -->
+  <!-- <script src="scripts/12-00.js"></script>
+  <script src="scripts/13-00.js"></script> -->
+
+  <!-- <script type="text/javascript" src="scripts/12-00.js"></script>
+  <script type="text/javascript" src="scripts/13-00.js"></script> -->
+
+  <script  type="text/javascript">
+
+  function loadFile(src){
+         var script = document.createElement("script");
+        //  file.setAttribute("type", "text/javascript");
+        //  file.setAttribute("src", "scripts/12-00.js");
+        script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = src + '.js';
+        document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  function unloadFile(removesrc, classhour) {
+    var source = removesrc;
+    var hour = classhour;
+    $('script[src= source]').remove();
+    $(hour).mouseout(function() {
+    location.reload();
+  });
+  }
+
+
+
+  function unloadFile0() {
+    $("script[src='scripts/12-00.js']").remove()
+    for (x=0; x<24; x++) {
+
+      $('.hour' + x).mouseover(function() {
+        loadFile('scripts/13-00');
+        location.reload();
+      });
+    }
+  }
+
+  function unloadFile1() {
+    $("script[src='scripts/13-00.js']").remove()
+    for (x=0; x<24; x++) {
+
+      $('.hour' + x).mouseover(function() {
+        loadFile('scripts/13-00');
+        location.reload();
+      });
+    }
+  }
+
+  function unloadFile2() {
+  $("script[src='scripts/14-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile3() {
+  $("script[src='scripts/15-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile4() {
+  $("script[src='scripts/16-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile5() {
+  $("script[src='scripts/17-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile6() {
+  $("script[src='scripts/18-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile7() {
+  $("script[src='scripts/19-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile8() {
+  $("script[src='scripts/20-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile9() {
+  $("script[src='scripts/21-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile10() {
+  $("script[src='scripts/22-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile101() {
+  $("script[src='scripts/22-00-1.js']").remove()
+  for (x=0; x<25; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile102() {
+  $("script[src='scripts/22-00-2.js']").remove()
+  for (x=0; x<26; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile11() {
+  $("script[src='scripts/23-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile12() {
+  $("script[src='scripts/24-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile13() {
+  $("script[src='scripts/01-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile14() {
+  $("script[src='scripts/02-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile15() {
+  $("script[src='scripts/03-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile16() {
+  $("script[src='scripts/04-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile17() {
+  $("script[src='scripts/05-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile18() {
+  $("script[src='scripts/06-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile19() {
+  $("script[src='scripts/07-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile20() {
+  $("script[src='scripts/08-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile21() {
+  $("script[src='scripts/09-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile22() {
+  $("script[src='scripts/10-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  function unloadFile23() {
+  $("script[src='scripts/11-00.js']").remove()
+  for (x=0; x<24; x++) {
+
+    $('.hour' + x).mouseover(function() {
+      loadFile('scripts/13-00');
+      location.reload();
+    });
+  }
+  }
+
+  var req = new XMLHttpRequest();
+  req.open('GET', 'main-bg-video.mp4', true);
+  req.responseType = 'blob';
+
+  req.onload = function() {
+    // Onload is triggered even on 404
+    // so we need to check the status code
+    if (this.status === 200) {
+      var videoBlob = this.response;
+      var vid = URL.createObjectURL(videoBlob); // IE10+
+      // Video is now downloaded
+      // and we can set it as source on the video element
+      "main-bg-video.mp4".src = vid;
+    }
+  }
+  req.onerror = function() {
+    // Error
+  }
+
+  req.send();
+
+
+// function unloadFile17() {
+//   $("script[src='scripts/05-00.js']").remove()
+//   $('.hour17').mouseout(function() {
+//   location.reload();
+// });
+// }
+
+
+$(".hour4").hover(function(){
+  $("#piazza-della-signoria").fadeIn(300);
+},function(){
+  $("#piazza-della-signoria").fadeOut(300)
+});
+
+  $(".hour5").hover(function(){
+    $("#piazza-della-repubblica").fadeIn(300);
+  },function(){
+    $("#piazza-della-repubblica").fadeOut(300)
+  });
+
+  $(".hour8").hover(function(){
+    $("#chiesa-di-santa-fosca").fadeIn(300);
+  },function(){
+    $("#chiesa-di-santa-fosca").fadeOut(300)
+  });
+
+  $(".hour9").hover(function(){
+    $("#piazzale-michelangelo").fadeIn(300);
+  },function(){
+    $("#piazzale-michelangelo").fadeOut(300)
+  });
+
+  $(".hour10-2").hover(function(){
+    $("#piazzale-michelangelo").fadeIn(300);
+  },function(){
+    $("#piazzale-michelangelo").fadeOut(300)
+  });
+
+
+  $(".hour10").hover(function(){
+    $("#piazza-della-repubblica").fadeIn(300);
+  },function(){
+    $("#piazza-della-repubblica").fadeOut(300)
+  });
+
+  $(".hour10-1").hover(function(){
+    $("#piazza-della-signoria").fadeIn(300);
+  },function(){
+    $("#piazza-della-signoria").fadeOut(300)
+  });
+
+  $(".hour11").hover(function(){
+    $("#piazza-della-repubblica").fadeIn(300);
+  },function(){
+    $("#piazza-della-repubblica").fadeOut(300)
+  });
+
+  </script>
+
+</body>
+</html>

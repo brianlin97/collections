@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Soundscapes</title>
+  <link rel="stylesheet" href="https://use.typekit.net/wtq0cbw.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link type="text/css" rel="stylesheet" href="stagger.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <style>
+  @import url("https://use.typekit.net/wtq0cbw.css");
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- <div id="intro">
+    <div id="intro-p1">
+    <p >Use headphones for best experience.<p>
+    </div>
+    <div id="intro-p2">
+      <p >This website is primarily an audio experience. Over the course of 2 months, 60 seconds of audio were recorded on the hour in various piazzas and city centers around Italy and its surrounding countries. <br>
+        Use your ears to fill in the blanks, and encounter the city in a whole new way. <p>
+      </div>
+  </div> -->
+  <div id="container" class="wrapper">
+
+
+
+    <div id="title">
+      <h2>SOUNDSCAPES</h2>
+    </div>
+
+    <div id="about">
+    <a><i class="fa fa-question-circle"></i></a>
+  </div>
+
+    <div id="circle-toggle">
+      <button class="btn draw-border active" id="location-btn">LOCATION</button>
+      <button class="btn draw-border" id="sounds-btn">SOUNDS</button>
+    </div>
+
+
+    <div id="headphones-caption">
+      <p >Use headphones for best experience.<p>
+    </div>
+    <!-- <h1>hullo</h1> -->
+    <div id="scene">
+      <div data-depth="0.2" class="layer" id="location-container">
+
+        <a href="http://localhost:8888/collections/duomo.php"><div class="location-circle-large location" id=location-duomo>
+          <div class="loc-hover " id="duomo-hover">
+            <h3>DUOMO FIRENZE</h3>
+          </div>
+        </div></a>
+
+
+        <a href="http://localhost:8888/collections/san-lorenzo.php"><div class="location-circle-large location" id=location-san-lorenzo>
+          <div class="loc-hover " id="san-lorenzo-hover">
+            <h3>SAN LORENZO</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/san-marco.php"><div class="location-circle-large location" id=location-san-marco>
+          <div class="loc-hover" id="san-marco-hover">
+            <h3>SAN MARCO</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/santissima-annunziata.php"><div class="location-circle location" id=location-santissima-annunziata>
+          <div class="loc-hover" id="santissima-annunziata-hover">
+            <h3>SANTISSIMA ANNUNZIATA</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/piazza-della-repubblica.php"><div class="location-circle location" id=location-piazza-della-repubblica>
+          <div class="loc-hover" id="piazza-della-repubblica-hover">
+            <h3>PIAZZA DELLA REPUBBLICA</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/santa-croce.php"><div class="location-circle location" id=location-santa-croce>
+          <div class="loc-hover" id="santa-croce-hover">
+            <h3>SANTA CROCE</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/santo-spirito.php"><div class="location-circle location" id=location-santo-spirito>
+          <div class="loc-hover" id="santo-spirito-hover">
+            <h3>SANTO SPIRITO</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/duomo-milano.php"><div class="location-circle location" id=location-duomo-milano>
+          <div class="loc-hover" id="duomo-milano-hover">
+            <h3>DUOMO MILANO</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/piazza-della-signoria.php"><div class="location-circle-large location" id=location-piazza-della-signoria>
+          <div class="loc-hover" id="piazza-della-signoria-hover">
+            <h3>PIAZZA DELLA SIGNORIA</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/piazzale-michelangelo.php"><div class="location-circle location" id=location-piazzale-michelangelo>
+          <div class="loc-hover" id="piazzale-michelangelo-hover">
+            <h3>PIAZZALE MICHELANGELO</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/chiesa-di-santa-fosca.php"><div class="location-circle location" id=location-chiesa-di-santa-fosca>
+          <div class="loc-hover" id="chiesa-di-santa-fosca-hover">
+            <h3>CHIESA DI SANTA FOSCA</h3>
+          </div>
+        </div></a>
+
+        <!--SOUND-->
+
+        <a href="http://localhost:8888/collections/music.php"><div class="location-circle-large sound" id=sound-music>
+          <div class="loc-hover" id="music-hover">
+            <h3>MUSIC</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/piazzale-michelangelo.php"><div class="location-circle sound" id=sound-children>
+          <div class="loc-hover" id="children-hover">
+            <h3>CHILDREN</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/piazzale-michelangelo.php"><div class="location-circle sound" id=sound-chinese>
+          <div class="loc-hover" id="chinese-hover">
+            <h3>CHINESE</h3>
+          </div>
+        </div></a>
+
+        <a href="http://localhost:8888/collections/piazzale-michelangelo.php"><div class="location-circle sound" id=sound-siren>
+          <div class="loc-hover" id="siren-hover">
+            <h3>SIREN</h3>
+          </div>
+        </div></a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <script type="text/javascript" src="scripts/parallax.js"></script> -->
+  <script src="scripts/parallax.min.js"></script>
+  <script>
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene, {
+    clipRelativeInput:true,
+    frictionX: 0.025,
+    frictionY: 0.025,
+    scalarX: 5,
+    scalarY: 10
+  });
+
+  </script>
+
+
+  <script src="scripts/scripts.js"> </script>
+
+</body>
+
+</html>

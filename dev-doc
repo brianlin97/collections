@@ -1,0 +1,23 @@
+Website architecture
+
+//index_html
+
+<container>
+  <title>
+  </title>
+
+  <id=scene>
+    <class=layer id=location-container>
+        //size of the circle will grow according to how many data points are inside it
+        //size: small, medium, large
+        <class="location-container" id="location-//>
+          <class="loc-hover" id="//-hover">
+        </>
+    </>
+  </scene>
+
+
+
+</container>
+
+//

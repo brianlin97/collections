@@ -1,0 +1,11 @@
+#audio { width: 100%;
+display: block;
+position: absolute;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  width: 50%;
+  height: 50%;
+ }

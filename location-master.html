@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Duomo</title>
+  <link rel="stylesheet" href="https://use.typekit.net/wtq0cbw.css">
+  <link type="text/css" rel="stylesheet" href="location.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <style>
+  @import url("https://use.typekit.net/wtq0cbw.css");
+  </style>
+</head>
+
+<body id="duomo">
+
+  <div id="title">
+    <h2>SOUNDSCAPES</h2>
+  </div>
+
+  <div class="circle">
+  </div>
+
+  <div class="time-headers">
+    <h6 id="noon">NOON</h6>
+    <h6 id="six-am">6AM</h6>
+    <h6 id="six-pm">6PM</h6>
+    <h6 id="midnight">MIDNIGHT</h6>
+  </div>
+  <!-- <img id="clock-ref" src="24_hour_clock.gif"> -->
+
+  <div class="time-circle">
+    <div class="hour0" onmouseover="PlaySound('audio')"  onmouseout="StopSound('audio')")></div>
+    <div class="hour1"></div>
+    <div class="hour2"></div>
+    <div class="hour3"></div>
+    <div class="hour4"></div>
+    <div class="hour5"></div>
+    <div class="hour6"></div>
+    <div class="hour7"></div>
+    <div class="hour8"></div>
+    <div class="hour9"></div>
+    <div class="hour10"></div>
+    <div class="hour11"></div>
+    <div class="hour12"></div>
+    <div class="hour13"></div>
+    <div class="hour14"></div>
+    <div class="hour15"></div>
+    <div class="hour16"></div>
+    <div class="hour17"></div>
+    <div class="hour18"></div>
+    <div class="hour19"></div>
+    <div class="hour20"></div>
+    <div class="hour21"></div>
+    <div class="hour22"></div>
+    <div class="hour23"></div>
+  </div>
+
+  <div class=location-name>
+    <h2 id="name-title">DUOMO</h2>
+  </div>
+
+  <div class="time-title">
+    <h3 id="12">12:00</h3>
+    <h3 id="13">13:00</h3>
+    <h3 id="14">14:00</h3>
+    <h3 id="15">15:00</h3>
+    <h3 id="16">16:00</h3>
+    <h3 id="17">17:00</h3>
+    <h3 id="18">18:00</h3>
+    <h3 id="19">19:00</h3>
+    <h3 id="20">20:00</h3>
+    <h3 id="21">21:00</h3>
+    <h3 id="22">22:00</h3>
+    <h3 id="23">23:00</h3>
+    <h3 id="24">24:00</h3>
+    <h3 id="1">01:00</h3>
+    <h3 id="2">02:00</h3>
+    <h3 id="3">03:00</h3>
+    <h3 id="4">04:00</h3>
+    <h3 id="5">05:00</h3>
+    <h3 id="6">06:00</h3>
+    <h3 id="7">07:00</h3>
+    <h3 id="8">08:00</h3>
+    <h3 id="9">09:00</h3>
+    <h3 id="10">10:00</h3>
+    <h3 id="11">11:00</h3>
+  </div>
+
+  <div class="tags">
+    <div class="rain"><h3>RAIN</h3></div>
+    <div></div>
+  </div>
+
+  <script src="scripts/location.js"> </script>
+
+  <audio id="audio">
+    <source src="http://localhost:8888/collections/Lucca%20Piazzale%20Anfiteatro%20Afternoon.m4a">
+  </audio>
+
+  <canvas  id="canvas"></canvas>
+  <script src="audio.js"></script>
+
+</body>
+</html>

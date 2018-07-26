@@ -1,0 +1,351 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+}
+
+a{
+  color:#505050;
+}
+
+.wrapper {
+  background: linear-gradient(100deg,#E2E1E0 , #FFFFFF 60%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+#intro {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(100deg,#E2E1E0 , #FFFFFF 60%);
+  z-index: 100;
+  animation-iteration-count: 1
+  -webkit-animation-iteration-count: 1
+  /*animation: display 3s ease-out 10s forwards;
+  -webkit-animation: display 3s ease-out 10s forwards;*/
+}
+
+/*#intro::after {
+  content: "";
+  display: none;
+}*/
+
+
+#headphones-caption{
+  position: absolute;
+  font-family: "filson-pro";
+  font-weight: 300;
+  left: 3%;
+  top: 82.5%;
+  font-size: 1rem;
+  z-index: 100;
+  animation: fadeinout 5s ease-in forwards;
+  -webkit-animation: fadeinout 5s ease-in forwards;
+  color: #FF7B7B;
+
+
+
+}
+
+
+
+#intro-p2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(100deg,#E2E1E0 , #FFFFFF 60%);
+  opacity: 0;
+  animation: fadein 3s ease-in 7s forwards;
+  -webkit-animation: fadein 3s ease-in 4s forwards;
+  /*animation: fadeout 3s ease-in 50s forwards;
+  -webkit-animation: fadeout 3s ease-in 50s forwards;*/
+
+
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   {
+    opacity: 0; }
+}
+
+
+/*#background {
+background-image: url("images/city-background-bokeh.jpg");
+width: 100%;
+height: 100vh;
+background-size: cover;
+}*/
+
+#title {
+  position: absolute;
+  left: 3%;
+  top: 2%;
+}
+
+#title h2{
+  font-family: "filson-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.layer {
+  pointer-events: auto;
+}
+
+#first {
+  color: white;
+  position: absolute;
+  left: 50vw;
+  font-size: 3rem;
+}
+
+img {
+  width: 75%;
+}
+
+
+
+#location-container {
+  height: 98vh;
+  max-height: 99vh;
+}
+
+.location-circle {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #505050;
+  border-radius: 50%;
+  position: absolute;
+  /*transition: all 70ms ease-in;
+  -webkit-transition: all 70ms ease-in;*/
+  transform: scale(.9); /* 1/10 of the original size */
+  -webkit-transform: scale( .9 );
+transition: all .25s ease-in;
+}
+
+.location-circle-large {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #505050;
+  border-radius: 50%;
+  position: absolute;
+  /*transition: background-color .25s ease-in, height .1s ease-in, width .1s ease-in;
+  -webkit-transition: background-color .25s ease-in, height .1s ease-in, width .1s ease-in;*/
+  transform: scale(.9); /* 1/10 of the original size */
+  -webkit-transform: scale( .9 );
+transition: all .25s ease-in;
+}
+
+
+.location-circle:hover {
+  background-color: #F58282;
+  margin-left: -.25rem;
+  margin-top: -.25rem;
+  height: 2rem;
+  width: 2rem;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+
+
+.location-circle-large:hover {
+  background-color: #F58282;
+  margin-left: -.5rem;
+  margin-top: -.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+}
+
+
+#location-duomo {
+  left: 50%;
+  top: 50%;
+}
+
+#location-san-lorenzo {
+  left: 40%;
+  top: 40%;
+}
+
+#location-san-marco {
+  left: 65%;
+  top: 30%;
+}
+
+#location-piazza-della-repubblica {
+  left: 52.5%;
+  top: 60%;
+}
+
+#location-santa-croce {
+  left: 80%;
+  top: 65%;
+}
+
+#location-santissima-annunziata {
+  left: 75%;
+  top: 30%;
+}
+
+#location-santo-spirito{
+  left: 30%;
+  top: 80%;
+}
+
+#location-duomo-milano{
+  left: 20%;
+  top: 20%;
+}
+
+#location-piazza-della-signoria{
+  left: 60%;
+  top: 70%;
+}
+
+#location-piazzale-michelangelo{
+  left: 80%;
+  top: 85%;
+}
+
+#location-chiesa-di-santa-fosca{
+  left: 80%;
+  top: 5%;
+}
+
+#sound-music{
+  left: 50%;
+  top: 45%;
+}
+
+#sound-siren{
+  left: 40%;
+  top: 45%;
+}
+
+#sound-children{
+  left: 60%;
+  top: 45%;
+}
+
+#sound-chinese{
+  left: 30%;
+  top: 45%;
+}
+
+
+.loc-hover {
+  position: absolute;
+  margin-left: 1.5rem;
+  bottom: -50%;
+  padding: 0rem 1.5rem;
+  display: none;
+}
+
+
+.loc-hover h3 {
+  font-size: .9rem;
+  font-family: "ten-oldstyle";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+
+#circle-toggle {
+  position: absolute;
+  top: 90vh;
+  left: 3%;
+  z-index: 10000;
+  display: block;
+
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 2px #696969;
+  color: #696969;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+}
+.draw-border::after {
+  border-top-width: 3px;
+  border-right-width: 3px;
+}
+.draw-border:hover {
+  color: #FF7B7B;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #FF7B7B;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 500 .9rem 'filson-pro', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.1rem;
+}
+.btn:focus {
+  outline: 3px dotted ##FF7B7B;
+}
+
+.active {
+  color: #FF7B7B;
+}
+
+.location {
+  display: block;
+}
+
+.sound {
+  display: none;
+}
+
+textarea, select, input, button { outline: none; }

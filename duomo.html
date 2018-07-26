@@ -1,0 +1,354 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+  <title>Duomo</title>
+  <link rel="stylesheet" href="https://use.typekit.net/wtq0cbw.css">
+  <link type="text/css" rel="stylesheet" href="location.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <style>
+  @import url("https://use.typekit.net/wtq0cbw.css");
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </style>
+</head>
+
+<body id="duomo">
+
+  <div id="cover-video">
+<video  height=100% width=100% opacity=0.05 autoplay muted loop preload="none">
+  <source src="main-bg-video.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <div id="title">
+      <a href="http://localhost:8888/collections">
+    <h2>SOUNDSCAPES</h2>
+    </a>
+  </div>
+
+
+
+
+  <div class="circle">
+  </div>
+
+  <div class="time-headers">
+    <h6 id="noon">NOON</h6>
+    <h6 id="six-am">6AM</h6>
+    <h6 id="six-pm">6PM</h6>
+    <h6 id="midnight">MIDNIGHT</h6>
+  </div>
+  <!-- <img id="clock-ref" src="24_hour_clock.gif"> -->
+
+  <div class="time-circle">
+    <div class="hour0" onclick="loadFile('scripts/12-00')"  onmouseover="PlaySound('audio-duomo-12:00')"  onmouseout="StopSound('audio-duomo-12:00'); unloadFile();")>
+      <audio class="audio-duomo active"  id="audio-duomo-12:00">
+        <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%2012PM%201.m4a">
+      </audio></div>
+    <div class="hour1" onclick="loadFile('scripts/13-00')"  onmouseover="PlaySound('audio-duomo-13:00')"  onmouseout="StopSound('audio-duomo-13:00'); unloadFile1();">
+      <audio class="audio-duomo active" id="audio-duomo-13:00">
+        <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%201PM%201.m4a">
+      </audio></div>
+    <div class="hour2" onmouseover="PlaySound('audio-duomo-14:00')"  onmouseout="StopSound('audio-duomo-14:00')">
+      <audio class="audio-duomo active" id="audio-duomo-14:00">
+        <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%202PM%201.m4a">
+      </audio>
+</div>
+    <div class="hour3" onmouseover="PlaySound('audio-duomo-15:00')"  onmouseout="StopSound('audio-duomo-15:00')">
+        <audio class="audio-duomo active" id="audio-duomo-15:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%203PM.m4a">
+      </audio>
+      </div>
+    <!-- <div class="hour4"></div> -->
+    <div class="hour5" onmouseover="PlaySound('audio-duomo-17:00')"  onmouseout="StopSound('audio-duomo-17:00')">
+      <audio class="audio-duomo active" id="audio-duomo-17:00">
+    <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%205PM.m4a">
+    </audio></div>
+    <!-- <div class="hour6"></div> -->
+    <div class="hour7" onmouseover="PlaySound('audio-duomo-19:00')"  onmouseout="StopSound('audio-duomo-19:00')">
+      <audio class="audio-duomo active" id="audio-duomo-19:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%207PM%201.m4a">
+      </audio>
+    </div>
+    <div class="hour8" onmouseover="PlaySound('audio-duomo-20:00')"  onmouseout="StopSound('audio-duomo-20:00')">
+      <audio class="audio-duomo active" id="audio-duomo-20:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%208PM.m4a">
+      </audio>
+    </div>
+    <!-- <div class="hour8"></div> -->
+    <div class="hour9" onmouseover="PlaySound('audio-duomo-21:00')"  onmouseout="StopSound('audio-duomo-21:00')">
+      <audio class="audio-duomo active" id="audio-duomo-21:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%209PM.m4a">
+      </audio>
+    </div>
+    <!-- <div class="hour10"></div> -->
+    <div class="hour11" onmouseover="PlaySound('audio-duomo-23:00')"  onmouseout="StopSound('audio-duomo-23:00')">
+      <audio class="audio-duomo active" id="audio-duomo-23:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%2011PM%201.m4a">
+      </audio>
+    </div>
+    <div class="hour12" onmouseover="PlaySound('audio-duomo-24:00')"  onmouseout="StopSound('audio-duomo-24:00')">
+      <audio class="audio-duomo active" id="audio-duomo-24:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%2012PM%201.m4a">
+      </audio>
+    </div>
+    <div class="hour13" onmouseover="PlaySound('audio-duomo-1:00')"  onmouseout="StopSound('audio-duomo-1:00')">
+      <audio class="audio-duomo active" id="audio-duomo-1:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%201AM%201.m4a">
+      </audio>
+    </div>
+    <!-- <div class="hour14"></div> -->
+    <div class="hour15" onmouseover="PlaySound('audio-duomo-3:00')"  onmouseout="StopSound('audio-duomo-3:00')">
+      <audio class="audio-duomo active" id="audio-duomo-3:00">
+      <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%203AM%201.m4a">
+      </audio>
+    </div>
+    <!-- <div class="hour16"></div>
+    <div class="hour17"></div>
+    <div class="hour18"></div>
+    <div class="hour19"></div>
+    <div class="hour20"></div>
+    <div class="hour21"></div> -->
+    <div class="hour22"></div>
+    <div class="hour23"></div>
+  </div>
+
+  <div class=location-name>
+    <h2 id="name-title">DUOMO</h2>
+  </div>
+
+  <div class="time-title">
+    <h3 id="12">12:00</h3>
+    <h3 id="13">13:00</h3>
+    <h3 id="14">14:00</h3>
+    <h3 id="15">15:00</h3>
+    <h3 id="16">16:00</h3>
+    <h3 id="17">17:00</h3>
+    <h3 id="18">18:00</h3>
+    <h3 id="19">19:00</h3>
+    <h3 id="20">20:00</h3>
+    <h3 id="21">21:00</h3>
+    <h3 id="22">22:00</h3>
+    <h3 id="23">23:00</h3>
+    <h3 id="24">24:00</h3>
+    <h3 id="1">01:00</h3>
+    <h3 id="2">02:00</h3>
+    <h3 id="3">03:00</h3>
+    <h3 id="4">04:00</h3>
+    <h3 id="5">05:00</h3>
+    <h3 id="6">06:00</h3>
+    <h3 id="7">07:00</h3>
+    <h3 id="8">08:00</h3>
+    <h3 id="9">09:00</h3>
+    <h3 id="10">10:00</h3>
+    <h3 id="11">11:00</h3>
+  </div>
+
+  <div class="tags">
+    <div class="siren"><h3>SIREN</h3></div>
+    <div class="music"><h3>MUSIC</h3></div>
+    <div></div>
+  </div>
+
+  <script>
+  $(".hour0").hover(function(){
+    $("#12").fadeIn(300);
+  },function(){
+    $("#12").fadeOut(300)
+  });
+
+  $(".hour1").hover(function(){
+    $("#13").fadeIn(300);
+    $(".siren h3").fadeIn(300);
+  },function(){
+    $("#13").fadeOut(300)
+    $(".siren h3").fadeOut(300);
+
+  });
+
+  $(".hour2").hover(function(){
+    $("#14").fadeIn(300);
+  },function(){
+    $("#14").fadeOut(300)
+  });
+
+  $(".hour3").hover(function(){
+    $("#15").fadeIn(300);
+  },function(){
+    $("#15").fadeOut(300)
+  });
+
+  $(".hour4").hover(function(){
+    $("#16").fadeIn(300);
+  },function(){
+    $("#16").fadeOut(300)
+  });
+
+  $(".hour5").hover(function(){
+    $("#17").fadeIn(300);
+  },function(){
+    $("#17").fadeOut(300)
+  });
+
+  $(".hour6").hover(function(){
+    $("#18").fadeIn(300);
+  },function(){
+    $("#18").fadeOut(300)
+  });
+
+  $(".hour7").hover(function(){
+    $("#19").fadeIn(300);
+  },function(){
+    $("#19").fadeOut(300)
+  });
+
+  $(".hour8").hover(function(){
+    $("#20").fadeIn(300);
+  },function(){
+    $("#20").fadeOut(300)
+  });
+
+  $(".hour9").hover(function(){
+    $("#21").fadeIn(300);
+  },function(){
+    $("#21").fadeOut(300)
+  });
+
+  $(".hour10").hover(function(){
+    $("#22").fadeIn(300);
+  },function(){
+    $("#22").fadeOut(300)
+  });
+
+  $(".hour11").hover(function(){
+    $("#23").fadeIn(300);
+  },function(){
+    $("#23").fadeOut(300)
+  });
+
+  $(".hour12").hover(function(){
+    $("#24").fadeIn(300);
+    $(".siren h3").fadeIn(300);
+  },function(){
+    $("#24").fadeOut(300)
+    $(".siren h3").fadeOut(300);
+
+  });
+
+  $(".hour13").hover(function(){
+    $("#1").fadeIn(300);
+  },function(){
+    $("#1").fadeOut(300)
+  });
+
+  $(".hour14").hover(function(){
+    $("#2").fadeIn(300);
+  },function(){
+    $("#2").fadeOut(300)
+  });
+
+  $(".hour15").hover(function(){
+    $("#3").fadeIn(300);
+  },function(){
+    $("#3").fadeOut(300)
+  });
+
+
+  $(".hour16").hover(function(){
+    $("#4").fadeIn(300);
+  },function(){
+    $("#4").fadeOut(300)
+  });
+
+  $(".hour17").hover(function(){
+    $("#5").fadeIn(300);
+  },function(){
+    $("#5").fadeOut(300)
+  });
+
+
+  $(".hour18").hover(function(){
+    $("#6").fadeIn(300);
+  },function(){
+    $("#6").fadeOut(300)
+  });
+
+
+  $(".hour19").hover(function(){
+    $("#7").fadeIn(300);
+  },function(){
+    $("#7").fadeOut(300)
+  });
+
+
+  $(".hour20").hover(function(){
+    $("#8").fadeIn(300);
+  },function(){
+    $("#8").fadeOut(300)
+  });
+
+
+  $(".hour21").hover(function(){
+    $("#9").fadeIn(300);
+  },function(){
+    $("#9").fadeOut(300)
+  });
+
+
+  $(".hour22").hover(function(){
+    $("#10").fadeIn(300);
+  },function(){
+    $("#10").fadeOut(300)
+  });
+
+  $(".hour23").hover(function(){
+    $("#11").fadeIn(300);
+  },function(){
+    $("#11").fadeOut(300)
+  });
+
+  </script>
+
+
+
+
+  <!-- <audio id="audio-duomo-12:00">
+    <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%2012PM%201.m4a">
+  </audio>
+  <audio id="audio-duomo-13:00">
+    <source src="http://localhost:8888/collections/audio-logs/duomo/Duomo%20Front%201PM%201.m4a">
+  </audio> -->
+
+
+  <canvas  id="canvas"></canvas>
+  <!-- <script src="scripts/audio.js"> -->
+  <!-- <script src="scripts/12-00.js"></script>
+  <script src="scripts/13-00.js"></script> -->
+
+  <script  type="text/javascript">
+
+  function loadFile(src){
+         var script = document.createElement("script");
+        //  file.setAttribute("type", "text/javascript");
+        //  file.setAttribute("src", "scripts/12-00.js");
+        script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = src + '.js';
+        document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  function unloadFile() {
+    $("script[src='scripts/12-00.js']").remove()
+  }
+
+  function unloadFile1() {
+    $("script[src='scripts/13-00.js']").remove()
+  }
+
+  </script>
+
+</body>
+</html>

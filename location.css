@@ -1,0 +1,407 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /*background: linear-gradient(135deg,rgb(239,239,239),rgb(255,255,255));*/
+  background-color: rgb(248, 248, 248);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#title {
+  position: absolute;
+  left: 3%;
+  top: 2%;
+}
+
+#title h2{
+  font-family: "filson-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+#title a{
+  color: #FF7B7B;
+  text-decoration: none;
+}
+
+#cover-video video{
+  position: fixed;
+  opacity: .06;
+  object-fit: cover;
+}
+
+.circle {
+  height: auto;
+  padding-top: 28%;
+  width: 28%;
+  /*background-color: #505050;*/
+  border: .5rem solid #FF7B7B;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  /*background: linear-gradient(180deg,#80D7FF, #F2B679, #DBD7D4,#C6604D, #2E1567)*/
+  /*background: linear-gradient(180deg,#80D7FF, #FFB365, #2E1567)*/
+
+}
+
+.time-headers h6{
+  font-family: "filson-pro",sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #FF7B7B;
+}
+
+#noon {
+  position: fixed;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  top: 0%;
+}
+
+#midnight {
+  position: fixed;
+  transform: translate(-50%, 0%);
+  left: 50.4%;
+  top: 92%;
+}
+
+#six-am {
+  position: fixed;
+  transform: translate(-50%, -48%);
+  left: 25%;
+  top: 46%;
+}
+
+#six-pm {
+  position: fixed;
+  transform: translate(-50%, -48%);
+  left: 75%;
+  top: 46%;
+}
+
+
+
+#clock-ref {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 43%;
+
+}
+
+.hour0,
+.hour1,
+.hour2,
+.hour3,
+.hour4,
+.hour5,
+.hour6,
+.hour7,
+.hour8,
+.hour9,
+.hour10,
+.hour10-1,
+.hour10-2,
+.hour11,
+.hour12,
+.hour13,
+.hour14,
+.hour15,
+.hour16,
+.hour17,
+.hour18,
+.hour19,
+.hour20,
+.hour21,
+.hour22,
+.hour23
+{
+  /*padding-top: 1.4%;*/
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #505050;
+  transform: translate(-50%, -50%);
+  /*     transform-origin: right bottom; */
+  top: 48.5%;
+  left: 50%;
+  position: fixed;
+  transition: all .25s ease-in;
+  cursor: pointer;
+}
+
+.hour0:hover,
+.hour1:hover,
+.hour2:hover,
+.hour3:hover,
+.hour4:hover,
+.hour5:hover,
+.hour6:hover,
+.hour7:hover,
+.hour8:hover,
+.hour9:hover,
+.hour10:hover,
+.hour10-1:hover,
+.hour10-2:hover,
+.hour11:hover,
+.hour12:hover,
+.hour13:hover,
+.hour14:hover,
+.hour15:hover,
+.hour16:hover,
+.hour17:hover,
+.hour18:hover,
+.hour19:hover,
+.hour20:hover,
+.hour21:hover,
+.hour22:hover,
+.hour23:hover {
+  background-color: #FF7B7B;
+}
+
+.hour0:before,
+.hour1:before,
+.hour2:before,
+.hour3:before,
+.hour4:before,
+.hour5:before,
+.hour6:before,
+.hour7:before,
+.hour8:before,
+.hour9:before,
+.hour10:before,
+.hour10-1:before,
+.hour10-2:before,
+.hour11:before,
+.hour12:before,
+.hour13:before,
+.hour14:before,
+.hour15:before,
+.hour16:before,
+.hour17:before,
+.hour18:before,
+.hour19:before,
+.hour20:before,
+.hour21:before,
+.hour22:before,
+.hour23:before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  /*border:1px solid green;*/
+  width: 150%;
+  height: 150%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index:-1;
+}
+
+.hour0.clicked,
+.hour1.clicked,
+.hour2.clicked,
+.hour3.clicked,
+.hour4.clicked,
+.hour5.clicked,
+.hour6.clicked,
+.hour7.clicked,
+.hour8.clicked,
+.hour9.clicked,
+.hour10.clicked,
+.hour10-1.clicked,
+.hour10-2.clicked,
+.hour11.clicked,
+.hour12.clicked,
+.hour13.clicked,
+.hour14.clicked,
+.hour15.clicked,
+.hour16.clicked,
+.hour17.clicked,
+.hour18.clicked,
+.hour19.clicked,
+.hour20.clicked,
+.hour21.clicked,
+.hour22.clicked,
+.hour23.clicked{
+  height: 2rem;
+  width: 2rem;
+  margin-left: -.25rem;
+  margin-top: -.25rem;
+}
+
+
+.time-circle {
+  position: absolute;
+  z-index: 100;
+}
+.hour0 { transform: rotate(128deg) translate(-30vmin, 25vmin); }
+
+.hour1 { transform: rotate(142deg) translate(-30vmin, 24vmin); }
+
+.hour2 { transform: rotate(157deg) translate(-30vmin, 24vmin); }
+
+.hour3 { transform: rotate(171.5deg) translate(-30vmin, 23.5vmin); }
+
+.hour4 { transform: rotate(186.5deg) translate(-30vmin, 23.5vmin); }
+
+.hour5 { transform: rotate(202deg) translate(-30vmin, 23vmin); }
+
+.hour6 { transform: rotate(217.5deg) translate(-30vmin, 23.5vmin); }
+
+.hour7 { transform: rotate(233.5deg) translate(-30vmin, 23.75vmin); }
+
+.hour8 { transform: rotate(250.5deg) translate(-30vmin, 25vmin); }
+
+.hour9 { transform: rotate(266deg) translate(-30vmin, 25vmin); }
+
+.hour10 { transform: rotate(282deg) translate(-30vmin, 25vmin); }
+
+.hour10-1 { transform: rotate(290deg) translate(-30vmin, 34vmin); }
+
+.hour10-2 { transform: rotate(295deg) translate(-30vmin, 42vmin); }
+
+.hour11 { transform: rotate(296deg) translate(-30vmin, 24.5vmin); }
+
+.hour12 { transform: rotate(312deg) translate(-30vmin, 26vmin); }
+
+.hour13 { transform: rotate(325deg) translate(-30vmin, 25vmin); }
+
+.hour14 { transform: rotate(339deg) translate(-30vmin, 25vmin); }
+
+.hour15 { transform: rotate(355deg) translate(-30vmin, 25vmin); }
+
+.hour16 { transform: rotate(370deg) translate(-30vmin, 25vmin); }
+
+.hour17 { transform: rotate(386deg) translate(-30vmin, 25vmin); }
+
+.hour18 { transform: rotate(400deg) translate(-30vmin, 25vmin); }
+
+.hour19 { transform: rotate(416deg) translate(-30vmin, 25vmin); }
+
+.hour20 { transform: rotate(430deg) translate(-30vmin, 25vmin); }
+
+.hour21 { transform: rotate(444deg) translate(-30vmin, 25vmin); }
+
+.hour22 { transform: rotate(459.5deg) translate(-30vmin, 26vmin); }
+
+.hour23 { transform: rotate(473deg) translate(-30vmin, 25vmin); }
+
+.time-title {
+  position: relative;
+  /*width: 100%;*/
+  /*margin: auto;
+  text-align: center;*/
+  top: 40%;
+}
+
+.time-title h3{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  top: 2.5vh; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  font-family: "ten-oldstyle";
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #FF7B7B;
+  display: none;
+  letter-spacing: 6px;
+
+
+}
+
+.location-name {
+  top: 11vh;
+  position: absolute;
+  text-align: left;
+  left: 3%;
+  width: 20%;
+  margin: auto;
+  margin-top: 0px;
+  padding: 0px;
+  display: block;
+  /*vertical-align: text-bottom;*/
+}
+
+
+
+/*#piazza-della-repubblica #name-title {
+font-size: 2rem;
+}
+
+#piazza-della-signoria #name-title {
+font-size: 2rem;
+}
+
+#santo-spirito #name-title {
+font-size: 2.5rem;
+}
+
+#piazzale-michelangelo #name-title {
+font-size: 1.75rem;
+}*/
+
+#name-title {
+  font-family: "ten-oldstyle";
+  color: #696969;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+
+
+/*#duomo #name-title {
+/*position: absolute;*/
+
+
+
+.tags {
+  position: relative;
+  /*top:50%;
+  width: 100%;
+  margin: auto;
+  text-align: center;*/
+}
+
+.tags h3 {
+  font-family: "filson-pro";
+  color: #FF7B7B;
+  font-weight: 400;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  top: 110vh; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  display: none;
+
+
+}
+
+#audio {
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 1300px) {
+    .circle {
+      width: 31%;
+      height: 31%;
+    }
+}
