@@ -69,6 +69,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 console.log(document.getElementsByClassName('active').length);
+audio.crossOrigin = 'anonymous';
 
 //gets the array object of
 var audio = $('.hour13 audio')[0];
