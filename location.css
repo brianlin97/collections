@@ -405,3 +405,11 @@ font-size: 1.75rem;
       height: 31%;
     }
 }
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2) and
+(min-resolution: 192dpi) and (min-width: 1300px) {
+    .circle {
+      width: 31%;
+      height: 31%;
+    }
+}*/
