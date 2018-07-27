@@ -47,9 +47,23 @@ body, html {
   left: 50%;
   top: 50%;
   /*background: linear-gradient(180deg,#80D7FF, #F2B679, #DBD7D4,#C6604D, #2E1567)*/
+  /*background: linear-gradient(180deg,#80D7FF, #FFB365, #2E1567)
+
+}*/
+
+/*.circle {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+  border: .5rem solid #FF7B7B;
+  border-radius: 50%;
+
+  background: linear-gradient(180deg,#80D7FF, #F2B679, #DBD7D4,#C6604D, #2E1567)
   /*background: linear-gradient(180deg,#80D7FF, #FFB365, #2E1567)*/
 
-}
+}*/
 
 .time-headers h6{
   font-family: "filson-pro",sans-serif;
@@ -402,7 +416,7 @@ font-size: 1.75rem;
 @media only screen and (min-width: 1300px) {
     .circle {
       width: 31%;
-      height: 31%;
+      padding-top: 31%;
     }
 }
 
