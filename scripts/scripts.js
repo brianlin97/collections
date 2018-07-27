@@ -72,10 +72,10 @@ $("#sound-music").hover(function(){
   $("#music-hover").fadeOut(300);
 });
 
-$("#sound-siren").hover(function(){
-  $("#siren-hover").fadeIn(300);
+$("#sound-water").hover(function(){
+  $("#water-hover").fadeIn(300);
 },function(){
-  $("#siren-hover").fadeOut(300);
+  $("#water-hover").fadeOut(300);
 });
 
 $("#sound-chinese").hover(function(){
@@ -103,3 +103,40 @@ $('#location-btn').click(function(){
   $('.location').css("display", "block");
   $('.sound').css("display", "none");
 });
+
+// Get the modal
+var modal = document.getElementById('about-modal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("about-button");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+    $(".wrapper").css("filter","blur(4px)");
+    $(".wrapper").css("-webkit-filter","blur(4px)");
+    // -moz-filter: blur(4px);
+    // -ms-filter: blur(4px);
+    // -o-filter: blur(4px);
+    // filter: blur(4px);
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    $(".wrapper").css("filter","blur(0px)");
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        $(".wrapper").css("filter","blur(0px)");
+        $(".wrapper").css("-webkit-filter","blur(0px)");
+
+    }
+
+}
