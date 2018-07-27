@@ -399,7 +399,7 @@ font-size: 1.75rem;
 
 /*MEDIA QUERIES*/
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1500px) {
     .circle {
       width: 31%;
       height: 31%;
