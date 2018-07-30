@@ -74,6 +74,10 @@ body, html {
 
 #noon {
   position: fixed;
+  font-family: "filson-pro",sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+
   transform: translate(-50%, 0%);
   left: 50%;
   top: 0%;
@@ -81,13 +85,21 @@ body, html {
 
 #midnight {
   position: fixed;
+  font-family: "filson-pro",sans-serif;
+  font-weight: 300;
   transform: translate(-50%, 0%);
   left: 50.4%;
   top: 92%;
+  letter-spacing: 1px;
+
 }
 
 #six-am {
   position: fixed;
+  font-family: "filson-pro",sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+
   transform: translate(-50%, -48%);
   left: 25%;
   top: 46%;
@@ -95,6 +107,10 @@ body, html {
 
 #six-pm {
   position: fixed;
+  font-family: "filson-pro",sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+
   transform: translate(-50%, -48%);
   left: 75%;
   top: 46%;

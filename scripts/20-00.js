@@ -9,6 +9,10 @@
 // 		});
 // });
 
+$(".hour8").mouseover(function() {
+  $("#name-title").css("color","white");
+});
+
 $(document).ready(function(){
     $('.time-circle').mouseover(function() {
 			$(".time-circle div").children('.active').removeClass('active');
@@ -106,9 +110,9 @@ function draw() {
 
 	// background
 	var my_gradient= canvasCtx.createLinearGradient(canvas.width/30, 0, canvas.width, canvas.height);
-	my_gradient.addColorStop(0,"rgb(41,128,185)");
-	my_gradient.addColorStop(1,"rgb(19,34,49)");
-  canvasCtx.fillStyle = "rgb(248,248,248)";
+	my_gradient.addColorStop(0,"rgb(255,138,114)");
+	my_gradient.addColorStop(1,"rgb(255,197,113)");
+  canvasCtx.fillStyle = my_gradient;
 	canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
 	// $(".hour0").hover(function(){

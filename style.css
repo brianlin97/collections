@@ -41,10 +41,11 @@ a{
 #headphones-caption{
   position: absolute;
   font-family: "filson-pro";
-  font-weight: 300;
-  left: 3%;
-  top: 82.5%;
+  left: 37.5%;
+  font-weight: 600;
+  top: 5%;
   font-size: 1rem;
+  letter-spacing: 1px;
   z-index: 100;
   animation: fadeinout 5s ease-in forwards;
   -webkit-animation: fadeinout 5s ease-in forwards;
@@ -250,7 +251,7 @@ transition: all .25s ease-in;
 }
 
 #sound-chinese{
-  left: 30%;
+  left: 60%;
   top: 45%;
 }
 
@@ -351,8 +352,8 @@ textarea, select, input, button { outline: none; }
 
 #about-button {
   position: absolute;
-  left: 3%;
-  top:12%;
+  left: 90%;
+  top:5%;
   z-index: 1000;
   background-color: transparent;
   background-repeat:no-repeat;
@@ -362,13 +363,13 @@ textarea, select, input, button { outline: none; }
  outline:none;
 }
 
-#about-button .fa {
-  font-size: 1.2rem;
+#about-button {
+  font-size: .5rem;
   color: #505050;
   transition: color .25s ease-in;
 }
 
-#about-button .fa:hover {
+#about-button:hover {
   color: #FF7B7B;
 }
 
@@ -402,7 +403,7 @@ textarea, select, input, button { outline: none; }
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
 }
 

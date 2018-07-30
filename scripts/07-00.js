@@ -106,9 +106,9 @@ function draw() {
 
 	// background
 	var my_gradient= canvasCtx.createLinearGradient(canvas.width/30, 0, canvas.width, canvas.height);
-	my_gradient.addColorStop(0,"rgb(41,128,185)");
-	my_gradient.addColorStop(1,"rgb(19,34,49)");
-  canvasCtx.fillStyle = "rgb(248,248,248)";
+  my_gradient.addColorStop(0,"rgb(254,180,123)");
+	my_gradient.addColorStop(1,"rgb(255,213,98)");
+  canvasCtx.fillStyle = my_gradient;
 	canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
 	// $(".hour0").hover(function(){
