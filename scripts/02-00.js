@@ -156,3 +156,14 @@ $(document).ready(function(){
 			resize();
 	});
 });
+
+$('#name-title').css("color","white");
+$('.hour0, .hour1, .hour2, .hour3, .hour4, .hour5, .hour6, .hour7, .hour8, .hour9, .hour10, .hour10-1, .hour10-2, .hour11, .hour12, .hour13, .hour14, .hour15, .hour16, .hour17, .hour18, .hour19, .hour20, .hour21, .hour22, .hour23').css("background","white");
+$('#midnight').css("color","white");
+$('#noon').css("color","white");
+$('#six-am').css("color","white");
+$('#six-pm').css("color","white");
+
+
+$('#cover-video video source').attr('src',videoFile);
+$("#cover-video video")[0].load();
